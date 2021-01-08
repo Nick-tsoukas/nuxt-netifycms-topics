@@ -21,6 +21,7 @@ collections:
         widget: string
       - label: Image
         name: image
+        required: false
         widget: image
       - label: Summary
         name: summary
