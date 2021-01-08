@@ -1,7 +1,7 @@
 - [x] npx create-nuxt-app nuxt-netlifycms-articles
 - [x] remove tailwind, add
 - [x] create repo, and push to github
-- [ ] deploy to netlify
+- [x] deploy to netlify
 - [ ] enable netlify identity
 - [ ] add netlifyCms
 - [ ] add netlify cms and start script

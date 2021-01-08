@@ -1,78 +1,92 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Topics
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+  <div class="body_color">
+    <!-- Topics -->
+    <section class="container mx-auto mb-24"  id="topics">
+        <!-- categories -->
+        <div class="flex justify-center">
+            <div class="h-96 w-56 text-xl flex justify-center theology
+            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+                <h2 class="heading_font text-white pt-5">THEOLOGY</h2>
+            </div>
+            <div class="h-96 w-56 text-xl flex justify-center biology
+            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+                <h2 class="heading_font text-white pt-5">BIOLOGY</h2>
+            </div>
+            <div class="h-96 w-56 text-xl flex justify-center chemistry
+            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+                <h2 class="heading_font text-white pt-5">CHEMISTRY</h2>
+            </div>
+            <div class="h-96 w-56 text-xl flex justify-center physics
+            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+                <h2 class="heading_font text-white pt-5">PHYSICS</h2>
+            </div>
+            <div class="h-96 w-56 text-xl flex justify-center philosophy
+            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+                <h2 class="heading_font text-white pt-5">PHILOSOPHY</h2>
+            </div>
+            <div class="h-96 w-56 text-xl flex justify-center saint_hood
+            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+                <h2 class="heading_font text-white pt-5">SAINT HOOD</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- cards of featured articles wrapper -->
+    <section class="grid grid-cols-3 gap-4 justify-items-center mb-24">
+      <!-- article cards -->
+        <article v-for="(article, i) in featuredArticles" :key="i" class="shadow-lg h-96 w-96 bg-white">
+          <nuxt-link :to="`/articles/${article.slug}`">
+                <img class="object-contain h-60"  :src="article.image || '/images/chem.jpg' " alt="">
+            <div class="w-full h-auto p-10">
+                <h1 class="font-extrabold">{{ article.title }}</h1>
+                <p class="text-gray-500">{{ article.summary }} </p>
+                <hr class="border_line"/>
+            </div>
+          </nuxt-link>
+        </article>
+    </section>
+    <!-- <pre>{{ featuredArticles }}</pre> -->
+    
+</div>
 </template>
 
 <script>
-export default {}
+  export default {
+    // data: () => {
+    //   return {
+    //     featuredArticles: [
+    //       {
+    //         image: '/images/chem.jpg',
+    //         title: 'Hello',
+    //         summary: 'Takes story telling to the next level ...',
+    //         slug: '/articles/hello'
+    //       },
+    //       {
+    //         image: '/images/chem.jpg',
+    //         title: 'yo',
+    //         summary: 'Takes story telling to the next level ...',
+    //         slug: '/articles/yo'
+    //       },
+    //       {
+    //         image: '/images/chem.jpg',
+    //         title: 'Hello',
+    //         summary: 'Takes story telling to the next level ...',
+    //         slug: '/articles/hello'
+    //       }
+    //     ]
+    //   }
+    // },
+     async asyncData ({$content, params, error}) {
+      const articles = await $content('articles')
+        .where({ featured: true })
+        .only(['title', 'featured', 'slug', 'summary'])
+        .fetch()
+        .catch(() => {
+            error({ statusCode: 404, message: 'Page not found' })
+        });
+      return {
+       featuredArticles: articles
+      }
+    } 
+  }
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

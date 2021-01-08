@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@600&display=swap');
+
+.nuxt-content p  {
+    @apply text-red-800;
+}
+.nuxt-content h2  {
+    color: red
+}
+
+/* heading fonts */
+
+.heading_font {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+}
+/* background body color  */
+
+.body_color {
+    background-color : #f4f7fa
+}
+
+.theology {
+    background-image: url('/images/theology.jpeg');
+    background-position: center center;
+    filter: brightness(80%);
+}
+
+.philosophy {
+    background-image: url('/images/philo.jpeg');
+    background-position: center center;
+    background-size: contain;
+    filter: brightness(80%);
+}
+
+.biology {
+    background-image: url('/images/biology.jpeg');
+    background-position: center center;
+    background-size: contain;
+    filter: brightness(80%);
+}
+
+.saint_hood {
+    background-image: url('/images/saint.jpeg');
+    background-position: center center;
+    background-size: contain;
+    filter: brightness(80%);
+}
+
+.physics {
+    background-image: url('/images/pysics.jpeg');
+    background-position: center center;
+    background-size: contain;
+    filter: brightness(80%);
+}
+
+.chemistry {
+    background-image: url('/images/chem.jpg');
+    background-position: center center;
+    filter: brightness(80%);
+}
+
+
+/* border line for card */
+
+.border_line {
+    height: 5px;
+    width: 50%;
+    background-color: #00f94c;
+    margin: 10px auto;
+}
