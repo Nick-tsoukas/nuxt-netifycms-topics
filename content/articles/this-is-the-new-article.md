@@ -1,5 +1,6 @@
 ---
 title: This is the new article
+image: /images/biology.jpeg
 summary: "there is not much to say "
 ---
 # Hello world 
