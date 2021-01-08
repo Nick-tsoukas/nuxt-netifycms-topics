@@ -2,8 +2,8 @@
 - [x] remove tailwind, add
 - [x] create repo, and push to github
 - [x] deploy to netlify
-- [ ] enable netlify identity
-- [ ] add netlifyCms
-- [ ] add netlify cms and start script
+- [x] enable netlify identity
+- [x] add netlifyCms
+- [x] add netlify cms and start script
 - [ ] npm i concurrently -D
 - [ ] edit dev script "concurrently \"npm run dev\" \"npm run cmsProxy\""
