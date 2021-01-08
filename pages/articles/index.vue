@@ -1,14 +1,11 @@
 <template>
 <!-- This is the list of articles -->
     <div>
-        <pre>
+        <!-- <pre>
             {{ articles }}
-        </pre>
-        <div v-for="(article, i) in articles" :key="i">
-            <nuxt-link :to="`/articles/${article.slug}`">
-                {{ article.title }}
-            </nuxt-link>
-        </div>
+        </pre> -->
+
+            <ArticlesList :articles="articles" />
     </div>
 </template>
 

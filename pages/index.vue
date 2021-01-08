@@ -4,25 +4,14 @@
     <HomeCategories />
 
     <!-- cards of featured articles wrapper -->
-    <section class="grid grid-cols-3 gap-4 justify-items-center mb-24">
-      <!-- article cards -->
-        <article v-for="(article, i) in featuredArticles" :key="i" class="shadow-lg h-96 w-96 bg-white">
-          <nuxt-link :to="`/articles/${article.slug}`">
-                <img class="object-contain h-60"  :src="article.image || '/images/chem.jpg' " alt="">
-            <div class="w-full h-auto p-10">
-                <h1 class="font-extrabold">{{ article.title }}</h1>
-                <p class="text-gray-500">{{ article.summary }} </p>
-                <hr class="border_line"/>
-            </div>
-          </nuxt-link>
-        </article>
-    </section>
+    <ArticlesList :articles="featuredArticles" />
     <!-- <pre>{{ featuredArticles }}</pre> -->
     
 </div>
 </template>
 
 <script>
+// try to build a filter function to test
   export default {
     // data: () => {
     //   return {
@@ -49,15 +38,16 @@
     //   }
     // },
      async asyncData ({$content, params, error}) {
-      const articles = await $content('articles')
-        .where({ featured: true })
+      const featuredArticles = await $content('articles')
+        // .where({ featured: true })
+        .limit(3)
         .only(['title', 'featured', 'slug', 'summary'])
         .fetch()
         .catch(() => {
             error({ statusCode: 404, message: 'Page not found' })
         });
       return {
-       featuredArticles: articles
+       featuredArticles
       }
     } 
   }
