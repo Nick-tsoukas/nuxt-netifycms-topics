@@ -1,6 +1,7 @@
 <template>
+
     <nuxt-link :to="`/articles/${article.slug}`">
-      <img class="object-contain h-60"  :src="article.image || '/images/chem.jpg' " alt="">
+      <img class="h-60 w-full"  :src="article.image || '/images/chem.jpg' " alt="">
         <div class="w-full h-auto p-10">
             <h1 class="font-extrabold">{{ article.title }}</h1>
             <p class="text-gray-500">{{ article.summary }} </p>

@@ -5,8 +5,6 @@
 
     <!-- cards of featured articles wrapper -->
     <ArticlesList :articles="featuredArticles" />
-    <!-- <pre>{{ featuredArticles }}</pre> -->
-    
 </div>
 </template>
 
@@ -39,9 +37,9 @@
     // },
      async asyncData ({$content, params, error}) {
       const featuredArticles = await $content('articles')
-        // .where({ featured: true })
+        .where({ featured: true })
         .limit(3)
-        .only(['title', 'featured', 'slug', 'summary'])
+        .only(['title', 'featured', 'slug', 'summary', 'image'])
         .fetch()
         .catch(() => {
             error({ statusCode: 404, message: 'Page not found' })

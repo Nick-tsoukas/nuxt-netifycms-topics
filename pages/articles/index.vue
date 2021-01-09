@@ -1,10 +1,6 @@
 <template>
 <!-- This is the list of articles -->
     <div>
-        <!-- <pre>
-            {{ articles }}
-        </pre> -->
-
             <ArticlesList :articles="articles" />
     </div>
 </template>
@@ -13,7 +9,7 @@
 export default {
     async asyncData ({$content, params, error}) {
         const articles = await $content('articles')
-            .only(['title', 'featured', 'slug', 'summary'])
+            .only(['title', 'featured', 'slug', 'summary', 'image'])
             .fetch()
             .catch(() => {
                 error({ statusCode: 404, message: 'Page not found' })
