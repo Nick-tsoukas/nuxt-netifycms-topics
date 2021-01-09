@@ -1,7 +1,8 @@
 ---
 title: This is a Dark Sky
 image: /images/darksky.jpg
-summary: A Bright Sky
+summary: Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum
+  dolor sit amet consectetur adipisicing elit.
 featured: true
 ---
 Until recently, the prevailing view assumed *lorem ipsum* was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” *Before & After* magazine [answered a curious reader](https://www.straightdope.com/columns/read/2290/what-does-the-filler-text-lorem-ipsum-mean/ "Straight Dope – What Does the Filler Text Lorem Ipsum Mean?"), “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”

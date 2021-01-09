@@ -1,31 +1,40 @@
 <template>
-    <section class="container mx-auto mb-24"  id="topics">
-        <!-- categories -->
-        <div class="flex justify-center">
-            <div class="h-96 w-56 text-xl flex justify-center z-0 theology
-            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
-                <h2 class="heading_font text-white pt-5">THEOLOGY</h2>
-            </div>
-            <div class="h-96 w-56 text-xl flex justify-center z-0 biology
-            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
-                <h2 class="heading_font text-white pt-5">BIOLOGY</h2>
-            </div>
-            <div class="h-96 w-56 text-xl flex justify-center z-0 chemistry
-            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
-                <h2 class="heading_font text-white pt-5">CHEMISTRY</h2>
-            </div>
-            <div class="h-96 w-56 text-xl flex justify-center z-0 physics
-            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
-                <h2 class="heading_font text-white pt-5">PHYSICS</h2>
-            </div>
-            <div class="h-96 w-56 text-xl flex justify-center z-0 philosophy
-            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
-                <h2 class="heading_font text-white pt-5">PHILOSOPHY</h2>
-            </div>
-            <div class="h-96 w-56 text-xl flex justify-center z-0 saint_hood 
-            transition duration-500 ease-in-out hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
-                <h2 class="heading_font text-white pt-5">SAINTHOOD</h2>
-            </div>
+  <section>
+    <section style="position: relative" class="container mx-auto mb-32" id="topics">
+      <!-- categories -->
+      <div class="flex justify-center">
+        <div class="h-96 w-56 text-xl flex justify-center m-2 theology hover:z-10
+            transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
+          <h2 class="heading_font text-white pt-5">THEOLOGY</h2>
+          <img src="../static/images/icons/goddessicon1.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
         </div>
+        <div class="h-96 w-56 text-xl flex justify-center m-2 biology hover:z-10
+            transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
+          <h2 class="heading_font text-white pt-5">BIOLOGY</h2>
+          <img src="../static/images/icons/biologyiconmain.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+        </div>
+        <div class="h-96 w-56 text-xl flex justify-center m-2 chemistry hover:z-10
+            transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
+          <h2 class="heading_font text-white pt-5">CHEMISTRY</h2>
+          <img src="../static/images/icons/alchemyicon2.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+        </div>
+        <div class="h-96 w-56 text-xl flex justify-center m-2 physics hover:z-10
+            transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
+          <h2 class="heading_font text-white pt-5">PHYSICS</h2>
+          <img src="../static/images/icons/asteroid.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+        </div>
+        <div class="h-96 w-56 text-xl flex justify-center m-2 philosophy hover:z-10
+            transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
+          <h2 class="heading_font text-white pt-5">PHILOSOPHY</h2>
+          <img src="../static/images/icons/atomicon1.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+
+        </div>
+        <div class="h-96 w-56 text-xl flex justify-center m-2 saint_hood hover:z-10
+            transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
+          <h2 class="heading_font text-white pt-5">SAINTHOOD</h2>
+          <img src="../static/images/icons/angel.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+        </div>
+      </div>
     </section>
+  </section>
 </template>

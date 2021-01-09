@@ -4,9 +4,9 @@
     <h2>{{ article.title }}</h2>
     <NuxtContent :document="article" />
       <span class="text-gray-800">Author:</span> Nick Tsoukas
-    <div>Categories:
+    <!-- <div>Categories:
       {{ article.categories.join(', ') }}
-    </div>
+    </div> -->
   </div>
 
 </template>
