@@ -3,7 +3,7 @@
     <!-- Topics -->
     <HomeCategories />
 
-    <section class="bg-white dark:bg-gray-800 mb-44 mt-44">
+    <section class="bg-white dark:bg-gray-800 mb-28 mt-44">
 
       <div class="container mx-auto px-2 py-8">
         <div class="lg:flex items-center">
@@ -50,9 +50,17 @@
         </div>
       </div>
     </section>
+    <div class="text-center mb-36">
+      <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+        Featured Articles
+      </h2>
+      <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
+      </p>
+    </div>
     <!-- cards of featured articles wrapper -->
     <ArticlesList :articles="featuredArticles" />
-    <FamilyTree />
+    <MythologyIntro />
     <Footer/>
   </div>
 </template>
