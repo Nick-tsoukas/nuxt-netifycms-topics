@@ -91,3 +91,57 @@ transform: skew((random(10) - 5) + deg);
       transform:rotate(360deg);
   }
 }
+.hover_card:hover {
+  transition-duration: 400ms;
+  transform: translate(0,-8px)
+}
+
+.green_color {
+  color: #01ff9d;
+}
+
+// family tree
+
+.node {
+  cursor: pointer;
+}
+
+.overlay{
+    background-color:black;
+}
+ 
+.node circle {
+  fill: #fff;
+  stroke: white;
+  stroke-width: 1.5px;
+}
+ 
+.node text {
+  font-size:10px; 
+  font-family:sans-serif;
+  fill:white;
+  letter-spacing:.3em;
+  
+}
+
+
+ 
+.link {
+  fill: none;
+  stroke: green;
+  stroke-width: 1.5px;
+}
+
+.templink {
+  fill: none;
+  stroke: red;
+  stroke-width: 3px;
+}
+
+.ghostCircle.show{
+    display:block;
+}
+
+.ghostCircle, .activeDrag .ghostCircle{
+     display: none;
+}

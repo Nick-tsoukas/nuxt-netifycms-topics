@@ -52,6 +52,7 @@
     </section>
     <!-- cards of featured articles wrapper -->
     <ArticlesList :articles="featuredArticles" />
+    <FamilyTree />
     <Footer/>
   </div>
 </template>

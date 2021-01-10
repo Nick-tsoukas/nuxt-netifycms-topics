@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-opacity-75" style="background-color: #00fff9 !important;">
+  <div style="background-color: #01ff9d !important">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-black text-sm text-center sm:text-left">© 2021 Two Dudes —
         <a href="#" rel="noopener noreferrer" class="text-gray-500 ml-1" target="_blank">@anonymous</a>

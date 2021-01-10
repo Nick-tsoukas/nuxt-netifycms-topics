@@ -1,7 +1,7 @@
 <template>
-   <section class="grid grid-cols-4 gap-6 justify-items-center mb-24">
+   <section class="grid grid-cols-4 gap-6 justify-items-center mr-8 ml-8">
       <!-- article card -->
-        <article v-for="(article, i) in articles" :key="i" class="shadow-lg h-auto w-96 bg-white">
+        <article style="max-width: 22rem" v-for="(article, i) in articles" :key="i" class="shadow-lg h-auto bg-white hover_card">
           <ArticleCard :article="article" />
         </article>
     </section>
