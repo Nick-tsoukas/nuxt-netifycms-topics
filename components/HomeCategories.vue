@@ -6,12 +6,12 @@
         <div class="h-96 w-56 text-xl flex justify-center m-2 theology hover:z-10
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
           <h2 class="heading_font text-white pt-5">THEOLOGY</h2>
-          <img src="../static/images/icons/goddessicon1.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+          <img src="../static/images/icons/godicon.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
         </div>
         <div class="h-96 w-56 text-xl flex justify-center m-2 biology hover:z-10
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
           <h2 class="heading_font text-white pt-5">BIOLOGY</h2>
-          <img src="../static/images/icons/biologyiconmain.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+          <img src="../static/images/icons/biologyicon2.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
         </div>
         <div class="h-96 w-56 text-xl flex justify-center m-2 chemistry hover:z-10
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
@@ -26,13 +26,13 @@
         <div class="h-96 w-56 text-xl flex justify-center m-2 philosophy hover:z-10
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
           <h2 class="heading_font text-white pt-5">PHILOSOPHY</h2>
-          <img src="../static/images/icons/atomicon1.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+          <img src="../static/images/icons/philosophers-stone.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
 
         </div>
         <div class="h-96 w-56 text-xl flex justify-center m-2 saint_hood hover:z-10
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
           <h2 class="heading_font text-white pt-5">SAINTHOOD</h2>
-          <img src="../static/images/icons/angel.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
+          <img src="../static/images/icons/heart-wings.png" style="position: absolute; bottom: -90px; height: 56px" alt="">
         </div>
       </div>
     </section>

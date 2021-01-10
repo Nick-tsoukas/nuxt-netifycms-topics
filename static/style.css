@@ -12,6 +12,15 @@
     background-color : #f4f7fa
 }
 
+.footer_background {
+    background-image: url('./images/icons/hades.jpg');
+    background-position: center center;
+}
+
+.dogRed {
+    color: red;
+}
+
 .theology {
     background-image: url('/images/theology.jpeg');
     background-position: center center;
@@ -58,6 +67,14 @@
 .border_line {
     height: 5px;
     width: 50%;
-    background-color: #00f94c;
+    background-color: #01ff9d;
     margin: 10px auto;
 }
+
+.green_color {
+    color: #01ff9d;
+}
+
+
+/* glitch css */
+

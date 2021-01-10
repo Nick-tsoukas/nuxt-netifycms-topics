@@ -29,8 +29,6 @@ collections:
       - label: Body
         name: body
         widget: markdown
-      - label: Featured
-        name: featured
-        widget: boolean
+      - {label: "Featured", name: "featured", widget: "boolean", required: "false"}
 
 

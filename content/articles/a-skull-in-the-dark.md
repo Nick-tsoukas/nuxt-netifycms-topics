@@ -1,5 +1,10 @@
-This is way to dark dude !!!!! what the fuck 
-
+---
+title: Skull in the Dark
+image: /images/skull.jpg
+summary: Lorem ipsum dolor sit amet, consectetur adipiscing eli
+featured: true
+---
+This is way to dark dude !!!!! 
 
 Richard McClintock, a Latin scholar from Hampden-Sydney College, is [credited](https://en.wikipedia.org/wiki/Lorem_ipsum "Wikipedia – Lorem Ipsum") with discovering the source behind the ubiquitous filler text. In seeing a sample of *lorem ipsum*, his interest was piqued by *consectetur*—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from *De Finibus Bonorum et Malorum* (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.
 
