@@ -1,8 +1,7 @@
 <template>
-  <section>
     <section style="position: relative" class="container mx-auto mb-32" id="topics">
       <!-- categories -->
-      <div class="flex justify-center">
+      <div class="grid grid-cols-2 items-center md:flex flex-row justify-items-center">
         <div class="h-96 w-56 text-xl flex justify-center m-2 theology hover:z-10
             transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-125">
           <h2 class="heading_font text-white pt-5">THEOLOGY</h2>
@@ -36,5 +35,4 @@
         </div>
       </div>
     </section>
-  </section>
 </template>
